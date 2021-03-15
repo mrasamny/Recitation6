@@ -83,7 +83,7 @@ When a StopWatch object is created, it should be in reset mode.
 
 Using this information, the FSM looks as follows:
 
-![StopWatch FSM 1](https://delawarestateuniversity-my.sharepoint.com/:i:/g/personal/mrasamny_desu_edu/EZweUirr15VOkpl2crld5aYBFpgaQPd3Sa0fW5Jv6NvmfQ?download=1)
+<img src="https://delawarestateuniversity-my.sharepoint.com/:i:/g/personal/mrasamny_desu_edu/EZweUirr15VOkpl2crld5aYBFpgaQPd3Sa0fW5Jv6NvmfQ?download=1" width="50">
 
 However, you will notice that the same invocation results in the state
 changing between the **Stopped** and **Started** states.  This indicates that the two states can be combined into a single state.
