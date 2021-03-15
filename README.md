@@ -46,6 +46,19 @@ public class StopWatch
 
 ```
 
+Creating StopWatch objects,
+
+```java
+StopWatch joeStopWatch=new StopWatch();
+StopWatch janeStopWatch=new StopWatch();
+
+```
+results in the following object diagrams.
+
+<div style="text-align:center;">
+<img src="./images/stopWatchObjects.png" width="350">
+</div>
+
 An example usage of the class is as follows.
 
 ```java
@@ -83,12 +96,16 @@ When a StopWatch object is created, it should be in reset mode.
 
 Using this information, the FSM looks as follows:
 
-<img src="https://delawarestateuniversity-my.sharepoint.com/:i:/g/personal/mrasamny_desu_edu/EZweUirr15VOkpl2crld5aYBFpgaQPd3Sa0fW5Jv6NvmfQ?download=1" width="50">
+<div style="text-align:center;">
+<img src="./images/fsm-3state.png" width="300">
+</div>
 
 However, you will notice that the same invocation results in the state
 changing between the **Stopped** and **Started** states.  This indicates that the two states can be combined into a single state.
 
-![StopWatch FSM 1](https://delawarestateuniversity-my.sharepoint.com/:i:/g/personal/mrasamny_desu_edu/EeJpq4vdR0tAj7S8M_D_A5YBaJm-o4rwEjzno7jC65fhEA?download=1)
+<div style="text-align:center;">
+<img src="./images/fsm-2state.png" width="300">
+</div>
 
 We, therefore, have a two-state system, which leads to using boolean values to enumerate the states and a boolean variable to track the current state.
 
