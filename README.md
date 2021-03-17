@@ -121,7 +121,7 @@ public class StopWatch
     
     public void reset(){ 
        isInReset = true;
-		initialTime = currentTime = 0;
+       initialTime = currentTime = 0;
     }
     
     public void startStop(){ ... }
@@ -145,13 +145,13 @@ public class StopWatch
         
     public void startStop(){
     	
-		if (isInReset){
-			currentTime = Calendar.getInstance().getTimeInMillis();
-			initialTime = currentTime;
-			isInReset=false;
-		} else {
-			currentTime = Calendar.getInstance().getTimeInMillis();
-		}
+	if (isInReset){
+	    currentTime = Calendar.getInstance().getTimeInMillis();
+	    initialTime = currentTime;
+	    isInReset=false;
+	} else {
+	    currentTime = Calendar.getInstance().getTimeInMillis();
+	}
     }
     
     public long elapsedTime(){ ... }
@@ -178,10 +178,10 @@ public class StopWatch
     
     public void startStop(){
     	currentTime = Calendar.getInstance().getTimeInMillis();
-		if (isInReset){
-			initialTime = currentTime;
-			isInReset=false;
-		}
+	if (isInReset){
+	    initialTime = currentTime;
+	    isInReset=false;
+	}
     }
     
     public long elapsedTime(){ ... }
